@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.groupproject;
+package com.mycompany.roombooking;
 
-/**
- *
- * @author Harits
- */
-public class Bookable {
-    
+public interface Bookable {
+    void book();
+    void cancel();
+    void editBooking(String newDetails);
+    String getRoomNo();
+    boolean isBooked();
+    void setBooked(boolean isBooked);
 }
